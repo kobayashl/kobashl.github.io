@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Hugo &#43; GitHub Pagesでブログ作ってみた - Home</title>
+  <meta name="description" content="※Window環境">
+  <meta name="author" content="小林"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Home",
+    
+    "url": "https:\/\/kobayashl.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/kobayashl.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/kobayashl.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/kobayashl.github.io\/post\/2020-09-21-hugo_githubpages\/",
+          "name": "Hugo \u002b git hub pagesでブログ作ってみた"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "小林"
+  },
+  "headline": "Hugo \u002b GitHub Pagesでブログ作ってみた",
+  "description" : "技術系のアウトプットをしたくて作りました。\n技術系以外にも調べたことをまとめたりいろいろ活用していこうと思います。\n",
+  "inLanguage" : "ja",
+  "wordCount":  1401 ,
+  "datePublished" : "2020-09-21T21:07:10",
+  "dateModified" : "2020-09-21T21:07:10",
+  "image" : "https:\/\/kobayashl.github.io\/images\/avatar-icon.jpg",
+  "keywords" : [ "Hugo, GitHub" ],
+  "mainEntityOfPage" : "https:\/\/kobayashl.github.io\/post\/2020-09-21-hugo_githubpages\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/kobayashl.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/kobayashl.github.io\/images\/avatar-icon.jpg",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Hugo &#43; GitHub Pagesでブログ作ってみた" />
+<meta property="og:description" content="※Window環境">
+<meta property="og:image" content="https://kobayashl.github.io/images/avatar-icon.jpg" />
+<meta property="og:url" content="https://kobayashl.github.io/post/2020-09-21-hugo_githubpages/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Home" />
+
+  <meta name="twitter:title" content="Hugo &#43; GitHub Pagesでブログ作ってみた" />
+  <meta name="twitter:description" content="※Window環境">
+  <meta name="twitter:image" content="https://kobayashl.github.io/images/avatar-icon.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@iam_eccentrlc" />
+  <meta name="twitter:creator" content="@iam_eccentrlc" />
+  <link href='https://kobayashl.github.io/images/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.76.2" />
+  <link rel="alternate" href="https://kobayashl.github.io/index.xml" type="application/rss+xml" title="Home"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://kobayashl.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://kobayashl.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://kobayashl.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">メニューを切り替え</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://kobayashl.github.io">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Me" href="/page/about/">About Me</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="My Product" href="/page/product/">My Product</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Home" href="https://kobayashl.github.io">
+            <img class="avatar-img" src="https://kobayashl.github.io/images/avatar-icon.jpg" alt="Home" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Hugo &#43; GitHub Pagesでブログ作ってみた</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">※Window環境</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;小林
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>技術系のアウトプットをしたくて作りました。<br>
+技術系以外にも調べたことをまとめたりいろいろ活用していこうと思います。</p>
+<br>
+<h1 id="事前準備">事前準備</h1>
+<ul>
+<li>Hugoのインストール</li>
+<li>Gitのインストール</li>
+<li>GitHubのアカウント作成</li>
+</ul>
+<br>
+<h1 id="事前準備方法">事前準備方法</h1>
+<ul>
+<li>
+<p><strong>Hugoのインストール</strong></p>
+<p>まずは下記のサイトからHugoのzipファイルをダウンロードしてください</p>
+<p><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a><br>
+例：hugo_0.xx.x_Windows-64bit.zip ※Windows64bitの場合<br>
+※Windowのbit数確認方法 WINDOWSキー + PAUSEキー システムの種類のxxビット</p>
+  <br>
+<h4 id="ダウンロードしたhugoを解凍してpathを通す">ダウンロードしたHugoを解凍してPATHを通す</h4>
+<p>hugo_0.xx.x_Windows-xxbit.zipを解凍してhugo.exeを任意のフォルダに置いて<br>
+WINDOWSキー + PAUSEキー -&gt; システムの詳細設定 -&gt; 環境変数 に移動します<br>
+システム環境変数のPathをダブルクリック -&gt; 新規をクリックして下記の図のようにhugo.exeが格納されているファルダを指定します</p>
+<p><img src="/resources/2020_09_21_hugo_githubpages/addPath.PNG" alt="addPath.PNG"></p>
+<p>上記を行う(PATHを通す)ことでhugo.exeがどこからでも使えるようにしました</p>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p><strong>Gitのインストール</strong></p>
+</li>
+<li>
+<p><strong>GitHubのアカウント作成</strong></p>
+<p>以下のサイトで分かりやすく記載されているのでこちらの「公開鍵の登録」までをおこなってください<br>
+<a href="https://qiita.com/manabu-watanabe/items/ecf1b434baf305adaa00">https://qiita.com/manabu-watanabe/items/ecf1b434baf305adaa00</a></p>
+</li>
+</ul>
+<br>
+<h1 id="ブログを作成しよう">ブログを作成しよう</h1>
+<br>
+<p><strong>Git Hubにリポジトリを作成</strong></p>
+<p>GitHubで以下のリポジトリを作成してください</p>
+<p>プロジェクトのソースコード管理用リポジトリ；username/blog.git<br>
+※blogでなくても大丈夫です<br>
+公開用リポジトリ：username/username.github.io<br>
+※usernameはアカウント名</p>
+<p><strong>hugoのプロジェクトを作成</strong></p>
+<p>まずは、ブログを作成するフォルダを作成してください。ここにプロジェクトが作られます<br>
+次に、コマンドプロンプト開き(WINDOWSキー + Rキー cmdと入力後にenterキー)<br>
+コマンドプロンプトで先ほど作成したプロジェクトに移動して、以下を実行 ※blogは任意の名前です</p>
+<pre><code>hugo new site blog
+</code></pre>
+<p>上記を実行することでhugoの新規プロジェクトを作成することができます</p>
+<p><strong>hugoのテーマ適用</strong></p>
+<p>以下から好きなテーマを選びsubmoduleとして登録する<br>
+<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a><br>
+※以下のコマンドは、私が使用しているテーマの場合です</p>
+<pre><code>cd blog
+git init #リポジトリ化
+git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo #テーマを別レポジトリで管理する
+cp -r themes/beautifulhugo/exampleSite/* . #テーマを適用
+</code></pre>
+<p>blog/config.toml変更する<br>
+<code>blog/config.toml</code></p>
+<pre><code>baseurl = &quot;https://username.github.io&quot; #リポジトリの名前
+</code></pre>
+<p>ローカルでブログの確認</p>
+<pre><code>hugo server #ローカルでブログの確認ができる
+</code></pre>
+<p><a href="http://localhost:1313/">http://localhost:1313/</a>
+にアクセスすることでブログを確認することができます</p>
+<p>上記で問題ないことを確認してリポジトリに追加する</p>
+<pre><code>rm -rf public #ビルドファイルを削除
+git submodule add -b master https://github.com/username/username.github.io.git public #公開ファルダを登録
+
+git remote add origin https://github.com/username/blog.git #構築用フォルダを登録
+git push origin master #リモートリポジトリ(GitHub)にコミット
+</code></pre>
+<p>デプロイとプッシュの自動化<br>
+<code>deploy.sh</code></p>
+<pre><code>#!/bin/sh
+
+# If a command fails then the deploy stops
+set -e
+
+# Commit changes.
+msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+    msg=&quot;$*&quot;
+fi
+
+# blogのコミット
+printf &quot;\033[0;32mblog updates to GitHub...\033[0m\n&quot;
+
+# Add changes to git.
+git add .
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+
+# publicのコミット
+printf &quot;\033[0;32mDeploying updates to GitHub...\033[0m\n&quot;
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
+
+# Go To Public folder
+cd public
+
+# Add changes to git.
+git add .
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+git push origin master
+</code></pre>
+<p>上記スクリプトをblogフォルダに保存して実行</p>
+<pre><code>./deploy.sh &quot;コミットメッセージ&quot;
+</code></pre>
+<p>数分後<code>https://username.github.io </code>にブログが公開されます</p>
+<p>以上、お疲れ様でした</p>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://kobayashl.github.io/tags/hugo/">Hugo</a>&nbsp;
+            
+              <a href="https://kobayashl.github.io/tags/github/">GitHub</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f&amp;text=Hugo%20%2b%20GitHub%20Pages%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f&amp;via=iam_eccentrlc" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f&amp;title=Hugo%20%2b%20GitHub%20Pages%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f&amp;title=Hugo%20%2b%20GitHub%20Pages%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f&amp;title=Hugo%20%2b%20GitHub%20Pages%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkobayashl.github.io%2fpost%2f2020-09-21-hugo_githubpages%2f&amp;description=Hugo%20%2b%20GitHub%20Pages%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e4%bd%9c%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+            <li class="next">
+              <a href="https://kobayashl.github.io/post/2020-09-24-laravel_install/" data-toggle="tooltip" data-placement="top" title="Laravel環境構築(Homestead)">次ページ &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/kobayashl" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/iam_eccentrlc" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.hackthebox.eu/profile/260701" title="HackTheBox">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-crosshairs fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              小林
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://kobayashl.github.io">Home</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          poweredBy hugo
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://kobayashl.github.io/js/main.js"></script>
+<script src="https://kobayashl.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://kobayashl.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

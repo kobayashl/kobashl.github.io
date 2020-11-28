@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>作成中 on Home</title>
+    <link>https://kobayashl.github.io/tags/%E4%BD%9C%E6%88%90%E4%B8%AD/</link>
+    <description>Recent content in 作成中 on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 28 Nov 2020 19:50:54 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/tags/%E4%BD%9C%E6%88%90%E4%B8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspBerry Piで録画サーバー作ってみた</title>
+      <link>https://kobayashl.github.io/post/2020-11-28-recording_server/</link>
+      <pubDate>Sat, 28 Nov 2020 19:50:54 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-11-28-recording_server/</guid>
+      <description>&lt;p&gt;ラズベリーパイでテレビ番組の録画を出来るようにしました。&lt;br&gt;
+その方法を紹介します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Burp Suiteのインストール(Chrome) 作成中</title>
+      <link>https://kobayashl.github.io/post/2020-10-03-burpsuite_install/</link>
+      <pubDate>Sat, 03 Oct 2020 22:39:19 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-10-03-burpsuite_install/</guid>
+      <description>&lt;p&gt;日本語化方法、証明書のインストール方法などまとめておきたかったので書きました。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

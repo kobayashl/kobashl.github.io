@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home</title>
+    <link>https://kobayashl.github.io/</link>
+    <description>Recent content on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 28 Nov 2020 19:50:54 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspBerry Piで録画サーバー作ってみた</title>
+      <link>https://kobayashl.github.io/post/2020-11-28-recording_server/</link>
+      <pubDate>Sat, 28 Nov 2020 19:50:54 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-11-28-recording_server/</guid>
+      <description>&lt;p&gt;ラズベリーパイでテレビ番組の録画を出来るようにしました。&lt;br&gt;
+その方法を紹介します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Burp Suiteのインストール(Chrome) 作成中</title>
+      <link>https://kobayashl.github.io/post/2020-10-03-burpsuite_install/</link>
+      <pubDate>Sat, 03 Oct 2020 22:39:19 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-10-03-burpsuite_install/</guid>
+      <description>&lt;p&gt;日本語化方法、証明書のインストール方法などまとめておきたかったので書きました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WindowsでBashを使う</title>
+      <link>https://kobayashl.github.io/post/2020-09-26-cygwin_install/</link>
+      <pubDate>Sat, 26 Sep 2020 17:51:00 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-09-26-cygwin_install/</guid>
+      <description>&lt;p&gt;WindowsでもBashが使いたいと思いませんか？&lt;br&gt;
+Cygwinをインストールすることで、Bashが使えるようになります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Laravel環境構築(Homestead)</title>
+      <link>https://kobayashl.github.io/post/2020-09-24-laravel_install/</link>
+      <pubDate>Thu, 24 Sep 2020 22:46:01 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-09-24-laravel_install/</guid>
+      <description>&lt;p&gt;Homesteadを使用することで楽に開発環境の構築ができます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; GitHub Pagesでブログ作ってみた</title>
+      <link>https://kobayashl.github.io/post/2020-09-21-hugo_githubpages/</link>
+      <pubDate>Mon, 21 Sep 2020 21:07:10 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/post/2020-09-21-hugo_githubpages/</guid>
+      <description>&lt;p&gt;技術系のアウトプットをしたくて作りました。&lt;br&gt;
+技術系以外にも調べたことをまとめたりいろいろ活用していこうと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://kobayashl.github.io/page/about/</link>
+      <pubDate>Mon, 21 Sep 2020 18:51:08 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/page/about/</guid>
+      <description>名前 小林 こばやし kobayashi 誕</description>
+    </item>
+    
+    <item>
+      <title>My Product</title>
+      <link>https://kobayashl.github.io/page/product/</link>
+      <pubDate>Mon, 21 Sep 2020 18:51:00 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/page/product/</guid>
+      <description>まだ何もないですが、</description>
+    </item>
+    
+  </channel>
+</rss>
