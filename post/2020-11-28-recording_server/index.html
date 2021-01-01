@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>RaspBerry Piで録画サーバー作ってみた - Home</title>
-  <meta name="description" content="ラズベリーパイでテレビ番組の録画を出来るようにしました。
+  <meta name="description" content="RaspBerry Piでテレビ番組の録画を出来るようにしました。
 その方法を紹介します。">
   <meta name="author" content="小林"/><script type="application/ld+json">
 {
@@ -58,9 +58,9 @@
     "name" : "小林"
   },
   "headline": "RaspBerry Piで録画サーバー作ってみた",
-  "description" : "ラズベリーパイでテレビ番組の録画を出来るようにしました。\nその方法を紹介します。\n",
+  "description" : "RaspBerry Piでテレビ番組の録画を出来るようにしました。\nその方法を紹介します。\n",
   "inLanguage" : "ja",
-  "wordCount":  78 ,
+  "wordCount":  593 ,
   "datePublished" : "2020-11-28T19:50:54",
   "dateModified" : "2020-11-28T19:50:54",
   "image" : "https:\/\/kobayashl.github.io\/images\/avatar-icon.jpg",
@@ -80,7 +80,7 @@
 </script>
 
 <meta property="og:title" content="RaspBerry Piで録画サーバー作ってみた" />
-<meta property="og:description" content="ラズベリーパイでテレビ番組の録画を出来るようにしました。
+<meta property="og:description" content="RaspBerry Piでテレビ番組の録画を出来るようにしました。
 その方法を紹介します。">
 <meta property="og:image" content="https://kobayashl.github.io/images/avatar-icon.jpg" />
 <meta property="og:url" content="https://kobayashl.github.io/post/2020-11-28-recording_server/" />
@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Home" />
 
   <meta name="twitter:title" content="RaspBerry Piで録画サーバー作ってみた" />
-  <meta name="twitter:description" content="ラズベリーパイでテレビ番組の録画を出来るようにしました。
+  <meta name="twitter:description" content="RaspBerry Piでテレビ番組の録画を出来るようにしました。
 その方法を紹介します。">
   <meta name="twitter:image" content="https://kobayashl.github.io/images/avatar-icon.jpg" />
   <meta name="twitter:card" content="summary" />
@@ -272,7 +272,7 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>ラズベリーパイでテレビ番組の録画を出来るようにしました。<br>
+        <p>RaspBerry Piでテレビ番組の録画を出来るようにしました。<br>
 その方法を紹介します。</p>
 <ul>
 <li>必要な物</li>
@@ -283,6 +283,46 @@ HDD<br>
 B-Casカード<br>
 カードリーダー<br>
 アンテナケーブル</p>
+<ul>
+<li>RaspBerry Piのセットアップ</li>
+</ul>
+<p>SDカードのフォーマット
+SD Card Formatterを使用しました。
+<a href="https://www.sdcard.org/jp/downloads/formatter/">https://www.sdcard.org/jp/downloads/formatter/</a></p>
+<p>特に難しいことは無いと思いますが、SDカードが32GBの場合注意が必要そうです。
+以下を参考にしてみてください。
+<a href="https://www.fabshop.jp/%E3%80%90step-02%E3%80%91raspberry-pi%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8Bmicrosd%E3%82%AB%E3%83%BC%E3%83%89%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88/">https://www.fabshop.jp/%E3%80%90step-02%E3%80%91raspberry-pi%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8Bmicrosd%E3%82%AB%E3%83%BC%E3%83%89%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88/</a></p>
+<p>Raspberry Pi Imagerを使用してOSのインストールを行いました。
+<a href="https://www.raspberrypi.org/software/">https://www.raspberrypi.org/software/</a></p>
+<p>OSはRaspberry Pi OS Liteを選択しました。
+好きなOSで良いです。</p>
+<p>Raspberry_Pi_Imager.png</p>
+<p>WRITEを押してOSを書き込む</p>
+<p>書き込み終了後、SDカードのルートディレクトリに
+　ssh接続を有効にするためsshフォルダを作成
+　wifiに接続するためwpa_supplicant.confファイルを作成します。</p>
+<p>wpa_supplicant.conf中身</p>
+<p>country=JP
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+ssid=&ldquo;wifi_name&rdquo;
+psk=&ldquo;password&rdquo;
+}</p>
+<p>Raspberry Pi起動時に/etc/wpa_supplicant/wpa_supplicant.confを上書きします</p>
+<p>Raspberry Piを起動させて、ssh接続
+ssh <a href="mailto:pi@raspberrypi.local">pi@raspberrypi.local</a></p>
+<p>初期パスワードは「raspberry」です。</p>
+<p>raspi-configで初期設定</p>
+<p>sudo raspi-config</p>
+<p>以下を設定したと思います。忘れました。
+ファイルシステムの拡張
+ローケル, タイムゾーンの変更
+詳細については、この辺りを見て適宜設定してください。
+<a href="https://raspi.taneyats.com/entry/command-raspi-config">https://raspi.taneyats.com/entry/command-raspi-config</a>
+設定後は、再起動をしてください。</p>
+<p>HDDのマウント</p>
+<p>Raspberry PiにHDDを取り付けて、</p>
 
         
           <div class="blog-tags">
