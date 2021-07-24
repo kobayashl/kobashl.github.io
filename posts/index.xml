@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home</title>
-    <link>https://kobayashl.github.io/</link>
-    <description>Recent content on Home</description>
+    <title>Posts on Home</title>
+    <link>https://kobayashl.github.io/posts/</link>
+    <description>Recent content in Posts on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 22 Jul 2021 22:30:11 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 22:30:11 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raspberry Piを使用した無線LANルーターの作成方法</title>
       <link>https://kobayashl.github.io/posts/raspberrypi_router/</link>
@@ -43,15 +43,6 @@
       <description>&lt;p&gt;GitHub Pagesを使用することで、無料で静的サイトを立ち上げることができます。&lt;br&gt;
 Hugoと組み合わせて、ブロクサイトを作成する方法を紹介します。&lt;/p&gt;
 &lt;hr&gt;</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://kobayashl.github.io/pages/about/</link>
-      <pubDate>Mon, 21 Sep 2020 18:51:08 +0900</pubDate>
-      
-      <guid>https://kobayashl.github.io/pages/about/</guid>
-      <description>名前 小林 こばやし kobayashi 誕</description>
     </item>
     
   </channel>

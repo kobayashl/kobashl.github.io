@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RaspberryPi on Home</title>
+    <link>https://kobayashl.github.io/tags/raspberrypi/</link>
+    <description>Recent content in RaspberryPi on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 22 Jul 2021 22:30:11 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Piを使用した無線LANルーターの作成方法</title>
+      <link>https://kobayashl.github.io/posts/raspberrypi_router/</link>
+      <pubDate>Thu, 22 Jul 2021 22:30:11 +0900</pubDate>
+      
+      <guid>https://kobayashl.github.io/posts/raspberrypi_router/</guid>
+      <description>&lt;p&gt;RaspBerry Piを無線LANルーターとして使用する方法を紹介します。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

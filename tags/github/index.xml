@@ -8,13 +8,14 @@
     <language>ja-jp</language>
     <lastBuildDate>Mon, 21 Sep 2020 21:07:10 +0900</lastBuildDate><atom:link href="https://kobayashl.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo &#43; GitHub Pagesでブログ作ってみた</title>
-      <link>https://kobayashl.github.io/post/2020-09-21-hugo_githubpages/</link>
+      <title>Hugo &#43; GitHub Pagesを使用したサイトの作成方法</title>
+      <link>https://kobayashl.github.io/posts/hugo_githubpages/</link>
       <pubDate>Mon, 21 Sep 2020 21:07:10 +0900</pubDate>
       
-      <guid>https://kobayashl.github.io/post/2020-09-21-hugo_githubpages/</guid>
-      <description>&lt;p&gt;技術系のアウトプットをしたくて作りました。&lt;br&gt;
-技術系以外にも調べたことをまとめたりいろいろ活用していこうと思います。&lt;/p&gt;</description>
+      <guid>https://kobayashl.github.io/posts/hugo_githubpages/</guid>
+      <description>&lt;p&gt;GitHub Pagesを使用することで、無料で静的サイトを立ち上げることができます。&lt;br&gt;
+Hugoと組み合わせて、ブロクサイトを作成する方法を紹介します。&lt;/p&gt;
+&lt;hr&gt;</description>
     </item>
     
   </channel>
